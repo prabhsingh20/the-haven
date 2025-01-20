@@ -1,5 +1,4 @@
 function ReservationForm({ cabin }) {
-  // CHANGE
   const { maxCapacity } = cabin;
 
   return (

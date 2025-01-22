@@ -17,17 +17,25 @@ const authConfig = {
       try {
         const existingGuest = await getGuest(user.gmail);
 
-        if (!existingGuest)
+        if (!existingGuest) {
           await createGuest({ email: user.email, fullName: user.name });
+        }
 
         return true;
-      } catch {
+      } catch (error) {
+        console.error("Error during sign-in:", error);
         return false;
       }
     },
     async session({ session, user }) {
       const guest = await getGuest(session.user.email);
-      session.user.guestId = guest.id;
+
+      if (guest) {
+        session.user.guestId = guest.id;
+      } else {
+        session.user.guestId = null;
+      }
+
       return session;
     },
   },

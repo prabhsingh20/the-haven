@@ -1,5 +1,5 @@
-import image1 from "@/public/about-1.jpg";
-import image2 from "@/public/about-2.jpg";
+import image1 from "@/public/about-1.png";
+import image2 from "@/public/about-2.png";
 import Image from "next/image";
 import Link from "next/link";
 import { getCabins } from "../_lib/data-service";
@@ -15,7 +15,7 @@ export default async function Page() {
     <div className="grid grid-cols-5 gap-x-24 gap-y-32 text-lg items-center">
       <div className="col-span-3">
         <h1 className="text-4xl mb-10 text-accent-400 font-medium">
-          Welcome to The Wild Oasis
+          Welcome to The Haven
         </h1>
 
         <div className="space-y-8">
@@ -54,7 +54,7 @@ export default async function Page() {
           src={image2}
           placeholder="blur"
           quality={80}
-          alt="Family that manages The Wild Oasis"
+          alt="Family that manages The Haven"
         />
       </div>
 
@@ -65,18 +65,18 @@ export default async function Page() {
 
         <div className="space-y-8">
           <p>
-            Since 1962, The Wild Oasis has been a cherished family-run retreat.
+            Since 1962, The Haven has been a cherished family-run retreat.
             Started by our grandparents, this haven has been nurtured with love
             and care, passing down through our family as a testament to our
             dedication to creating a warm, welcoming environment.
           </p>
           <p>
-            Over the years, we&apos;ve maintained the essence of The Wild Oasis,
+            Over the years, we&apos;ve maintained the essence of The Haven,
             blending the timeless beauty of the mountains with the personal
             touch only a family business can offer. Here, you&apos;re not just a
             guest; you&apos;re part of our extended family. So join us at The
-            Wild Oasis soon, where tradition meets tranquility, and every visit
-            is like coming home.
+            Haven soon, where tradition meets tranquility, and every visit is
+            like coming home.
           </p>
 
           <div>

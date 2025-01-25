@@ -6,7 +6,7 @@ Haven is a modern hotel website built using Next.js, Tailwind CSS, and powered b
 
 Here’s a quick look at the design:
 
-[Check out the live demo](#)
+[Check out the live demo](https://the-haven-website.vercel.app/)
 
 ## Table of Contents
 

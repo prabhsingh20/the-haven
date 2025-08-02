@@ -16,7 +16,7 @@ export const metadata = {
   description:
     "Luxcurious cabin hotel, located in the heart of the Italian Dolomites, surrounded by beautiful mountains and dark forests",
 };
-
+// edited
 function RootLayout({ children }) {
   return (
     <html lang="en">
